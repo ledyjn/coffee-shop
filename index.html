@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Image Panel -->
+      <div class="image-panel"></div>
+
+      <!-- Login Panel -->
+      <div class="form-panel" id="login-panel">
+        <div class="gambar">
+          <img src="logo.svg" />
+        </div>
+        <h1>Login</h1>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Email Address" required />
+          <input type="password" id="login-password" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <a href="#" class="toggle-link" onclick="showRegister()"
+            >Don't have an account? Register</a
+          >
+        </form>
+      </div>
+
+      <!-- Register Panel -->
+      <div class="form-panel" id="register-panel" style="display: none">
+        <div class="gambar">
+          <img src="logo.svg" />
+        </div>
+        <h1>Register</h1>
+        <form id="register-form">
+          <input type="text" id="register-name" placeholder="Full Name" required />
+          <input type="email" id="register-email" placeholder="Email Address" required />
+          <input type="password" id="register-password" placeholder="Password" required />
+          <button type="submit">Register</button>
+          <a href="#" class="toggle-link" onclick="showLogin()">Already have an account? Login</a>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

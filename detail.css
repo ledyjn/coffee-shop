@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  gap: 50px;
+}
+
+/* Left Section (Image Slider) */
+.product-image-section {
+  position: relative;
+  width: 50%;
+}
+
+.image-slider {
+  position: relative;
+  text-align: center;
+}
+
+#main-product-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left-btn {
+  left: -30px;
+}
+
+.right-btn {
+  right: -30px;
+}
+
+/* Right Section (Product Info) */
+.product-info-section {
+  width: 50%;
+}
+
+.product-category {
+  font-size: 18px;
+  color: #5b5b5b;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #5e5e5e;
+  margin-bottom: 30px;
+}
+
+/* Contents */
+.contents-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contents-icons img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nutritional Values */
+.nutritional-values-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.nutritional-values-section table {
+  width: 100%;
+  max-width: 300px;
+  border-collapse: collapse;
+}
+
+.nutritional-values-section td {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nutritional-values-section td:first-child {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Order Button */
+.order-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.order-btn:hover {
+  background-color: #555555;
+}
+
+.back-to-menu-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(255, 131, 131);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+  text-align: center;
+  transition: background 0.3s ease;
+  margin-left: 10px;
+  max-width: 200px;
+}
+
+.back-to-menu-btn:hover {
+  background-color: #ffa5a5;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-image-section {
+    order: 1; /* Gambar dipindahkan ke atas */
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-info-section {
+    order: 2;
+    width: 100%;
+  }
+
+  #main-product-image {
+    max-width: 100%; /* Gambar memenuhi lebar container */
+    border-radius: 10px;
+  }
+
+  .slider-btn {
+    display: none; /* Tombol slider dihilangkan untuk layar kecil */
+  }
+
+  .contents-icons img {
+    width: 40px; /* Ikon lebih kecil di layar kecil */
+  }
+
+  .nutritional-values-section table {
+    max-width: 100%; /* Tabel responsif */
+  }
+
+  .order-btn {
+    width: 100%; /* Tombol memenuhi lebar container */
+    text-align: center;
+  }
+
+  .back-to-menu-btn {
+    width: 100%; /* Tombol Back juga memenuhi lebar container */
+    text-align: center;
+  }
+}

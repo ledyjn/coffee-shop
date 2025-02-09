@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Haven</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbarr">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Coffee Haven</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#banner">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div id="banner" class="banner">
+      <header class="hero" style="background: url('bg.svg') no-repeat center center/cover">
+        <div class="hero-text">
+          <h1>De Haven Delicious Coffee</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, quam nesciunt,
+            suscipit adipisci libero tempora repudiandae odio, impedit maiores perspiciatis beatae
+            laborum iusto similique esse laudantium iste possimus magni tenetur.
+          </p>
+          <a href="#menu" class="btn-custom">Lihat Menu</a>
+          <a href="#menu" class="btn-customm">More</a>
+        </div>
+      </header>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menuu">
+      <section id="menu" class="menu container text-center">
+        <div class="menu-text">
+          <h2>Menu terbaik minggu ini!</h2>
+          <p>Temukan kopi dengan diskon hingga 20%</p>
+        </div>
+        <div class="row">
+          <!-- Menu Espresso -->
+          <div class="col-md-4">
+            <div class="menu-item">
+              <img src="espresso.svg" alt="Espresso" class="img-fluid" />
+              <div class="text">
+                <h3>Espresso</h3>
+                <p>Kopi hitam pekat dengan rasa kuat.</p>
+              </div>
+              <div class="cart">
+                <p><strong>Rp 25.000</strong></p>
+                <a href="detail.html?menu=espresso"><button type="button">Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Menu Cappuccino -->
+          <div class="col-md-4">
+            <div class="menu-item">
+              <img src="capucino.svg" alt="Cappuccino" class="img-fluid" />
+              <div class="text">
+                <h3>Cappuccino</h3>
+                <p>Kombinasi espresso, susu, dan busa susu.</p>
+              </div>
+              <div class="cart">
+                <p><strong>Rp 30.000</strong></p>
+                <a href="detail.html?menu=cappuccino"><button type="button">Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Menu Latte -->
+          <div class="col-md-4">
+            <div class="menu-item">
+              <img src="latte.svg" alt="Latte" class="img-fluid" />
+              <div class="text">
+                <h3>Latte</h3>
+                <p>Espresso dengan susu yang creamy.</p>
+              </div>
+              <div class="cart">
+                <p><strong>Rp 35.000</strong></p>
+                <a href="detail.html?menu=latte"><button type="button">Detail</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- content section -->
+    <div id="keunggulan" class="page3">
+      <h3>Cinta dan manfaat dalam setiap tegukan</h3>
+      <div class="content">
+        <!-- Kolom kiri -->
+        <div class="column left">
+          <div class="item">
+            <img src="barista.svg" alt="Barista" class="icon" />
+            <h4>Profesional Barista</h4>
+            <p>Setiap cangkir kopi kami diracik dengan penuh keahlian oleh barista profesional.</p>
+          </div>
+          <div class="item">
+            <img src="takeaway.svg" alt="Takeaway" class="icon" />
+            <h4>Bisa Dibawa Pulang</h4>
+            <p>
+              Untuk Anda yang memiliki kesibukan, kami menyediakan layanan take-away yang praktis.
+              Nikmati kopi favorit Anda kapan saja dan di mana saja.
+            </p>
+          </div>
+          <div class="item">
+            <img src="bag.svg" alt="Coffee Bag" class="icon" />
+            <h4>Kopi untuk Semua Selera</h4>
+            <p>
+              Dari espresso yang kuat hingga latte yang lembut, pilihan kami dirancang untuk
+              memenuhi berbagai preferensi Anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gambar utama -->
+        <div class="column center">
+          <img src="caramel.svg" alt="Coffee Glass" class="main-image" />
+        </div>
+
+        <!-- Kolom kanan -->
+        <div class="column right">
+          <div class="item">
+            <img src="coffee.svg" alt="Energy" class="icon" />
+            <h4>Tambahan Energi</h4>
+            <p>
+              Segelas kopi kami tidak hanya memberikan rasa yang nikmat, tetapi juga menjadi
+              suntikan energi yang Anda butuhkan untuk memulai hari.
+            </p>
+          </div>
+          <div class="item">
+            <img src="roast.svg" alt="Roast" class="icon" />
+            <h4>Biji Kopi Berkualitas</h4>
+            <p>
+              Kami hanya memilih biji kopi terbaik yang dipanggang dengan tingkat kematangan
+              sempurna.
+            </p>
+          </div>
+          <div class="item">
+            <img src="milk.svg" alt="Milk" class="icon" />
+            <h4>Susu Alami</h4>
+            <p>
+              Untuk melengkapi pengalaman minum kopi Anda, kami menggunakan susu alami yang segar.
+              menjadikan setiap cangkir lebih istimewa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontak Section -->
+    <section id="contact" class="contact">
+      <h2>Hubungi Kami</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Nama" required /><br />
+        <input type="email" placeholder="Email" required /><br />
+        <textarea placeholder="Pesan Anda" required></textarea><br />
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Privacy</h3>
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Order ahead</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>About us</h3>
+          <ul>
+            <li><a href="#">Find a location</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our story</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">Plans & pricing</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Sell your product</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Social media</h3>
+          <ul class="social-media">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
